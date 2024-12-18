@@ -1,0 +1,9 @@
+ol{
+    list-style-position: outside;
+    list-style-image: url("imiges/ikona.jpg");
+}
+ol{background: green;}
+li{
+    background: black;
+    color: mediumpurple;
+}

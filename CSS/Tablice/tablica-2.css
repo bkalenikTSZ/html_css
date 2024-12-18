@@ -1,0 +1,7 @@
+table{
+    background: coral;
+}
+
+tr:hover{
+    background-color: yellow;
+}
