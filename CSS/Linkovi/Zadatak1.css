@@ -1,0 +1,16 @@
+a:link {
+    color:blue;
+}
+.l1{
+    background-color:lightgreen;
+}
+.l2{
+    background-color:red;
+}
+.l3{
+    background-color:yellow;
+}
+a:hover{
+    text-decoration: none;
+
+}

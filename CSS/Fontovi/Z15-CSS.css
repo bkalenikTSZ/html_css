@@ -1,0 +1,16 @@
+h1{
+    font-family: Verdana Serif;
+    font-size: 40em;
+    font-weight: bolder;
+}
+p{
+    font-family: Tahoma Serif;
+    font-size: 12em;
+    font-weight: lighter;
+}
+.p2{
+    font-size: 12em;
+    font-weight: 300;
+    font-variant: small-caps;
+}
+
