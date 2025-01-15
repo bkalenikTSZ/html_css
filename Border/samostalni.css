@@ -1,0 +1,49 @@
+.prvi{
+    border:2px dotted pink;
+    margin:2px;
+}
+.drugi{
+    border:4px dashed red;
+    margin-top:150px;
+}
+.treci{
+    border-top: solid greenyellow thin;
+    border-bottom: solid yellowgreen thick;
+    border-right: solid blueviolet;
+    border-left: solid violet;
+    margin: 154px;
+}
+.cetvrti{
+    border-top: solid greenyellow thick;
+    border-bottom: solid yellowgreen thick;
+    border-right:  none;
+    border-left: solid violet;
+    margin: 45px;
+}
+.peti{
+    margin: 1em;
+    border:2px solid brown;
+}
+.sesti{
+    margin: 3em;
+    border:6px dotted orange;
+}
+.sedmi{
+    margin:4em;
+    border:4px double green;
+}
+.osmi{
+    margin:9em;
+    border:4px solid red;
+}
+.deveti{
+    margin:0.5em;
+    border:4px double black;
+}
+.deseti {
+    margin:5em;
+    border:4px double blue;
+}
+
+
+
