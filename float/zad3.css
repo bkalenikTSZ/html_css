@@ -1,0 +1,16 @@
+
+
+.div1{
+    img{
+        height: 200px;
+        width: 200px;
+        float:left;
+    }
+}
+.div2{
+    img{
+        height: 200px;
+        width: 200px;
+        float: right;
+    }
+}
