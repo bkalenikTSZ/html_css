@@ -1,0 +1,90 @@
+#include "DHT.h"
+#define DHTPIN 2     
+#define DHTTYPE DHT11   
+DHT dht(DHTPIN, DHTTYPE);
+const int l1=13;
+const int l2=12;
+const int l3=11;
+const int l4=10;
+const int l5=9;
+const int l6=8;
+const int l7=7;
+const int l8=6;
+const int l9=5;
+const int l10=4;
+void setup() {
+Serial.begin(9600);
+  Serial.println(F("DHTxx test!"));
+
+  dht.begin();
+pinMode(l1,OUTPUT);
+pinMode(l2,OUTPUT);
+pinMode(l3,OUTPUT);
+pinMode(l4,OUTPUT);
+pinMode(l5,OUTPUT);
+pinMode(l6,OUTPUT);
+pinMode(l7,OUTPUT);
+pinMode(l8,OUTPUT);
+pinMode(l9,OUTPUT);
+pinMode(l10,OUTPUT);
+}
+
+void loop() {
+  delay(2000);
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  if (isnan(h) || isnan(t) ) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(F("°C "));
+  Serial.println(F("°F"));
+
+if(t<=20 && h<=25  ){
+  digitalWrite(l1,HIGH);
+  digitalWrite(l2,HIGH);
+  digitalWrite(l3,HIGH);
+}
+if(t>=20 && t<=24 && h>=26 && h<=40  ){
+  digitalWrite(l10,HIGH);
+  digitalWrite(l9,HIGH);
+  digitalWrite(l8,HIGH);
+}
+if (t>=25 &&  h>=25){
+  delay(500);
+  digitalWrite(l10,LOW);
+  digitalWrite(l1,HIGH);
+  delay(500);
+  digitalWrite(l1,LOW);
+  digitalWrite(l2,HIGH);
+  delay(500);
+  digitalWrite(l2,LOW);
+  digitalWrite(l3,HIGH);
+  delay(500);
+  digitalWrite(l3,LOW);
+  digitalWrite(l4,HIGH);
+  delay(500);
+  digitalWrite(l4,LOW);
+  digitalWrite(l5,HIGH);
+  delay(500);
+  digitalWrite(l5,LOW);
+  digitalWrite(l6,HIGH);
+  delay(500);
+  digitalWrite(l6,LOW);
+  digitalWrite(l7,HIGH);
+  delay(500);
+  digitalWrite(l7,LOW);
+  digitalWrite(l8,HIGH);
+  delay(500);
+  digitalWrite(l8,LOW);
+  digitalWrite(l9,HIGH);
+  delay(500);
+  digitalWrite(l9,LOW);
+  digitalWrite(l10,HIGH);
+}
+}
